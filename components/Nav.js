@@ -5,7 +5,7 @@ import Dropdown from './Dropdown';
 const Nav = () => {
     return (
         <div className="">
-            <nav className="fixed bg-green-200 w-full top-0 left-0 z-10">
+            <nav className="fixed bg-green-200 w-full top-0 left-0 z-10 bg-opacity-25 backdrop-filter backdrop-blur shadow-md md:px-12 lg:px-48">
           <div className="p-4 flex">
             <div className="w-full flex items-center">
               <h1 className="text-xl">

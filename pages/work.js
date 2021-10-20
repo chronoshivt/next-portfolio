@@ -8,6 +8,7 @@ function Work() {
           <CardItem
           title="Scotts NFT"
           thumbnail={Japan}
+          id="scotts"
           >
             Lead full stack developer for NFT project on
             Solana Blockchain.

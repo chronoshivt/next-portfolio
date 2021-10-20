@@ -1,9 +1,8 @@
 import Section from "../components/Section"
 import CardItem from "../components/CardItem"
-import Japan from "../public/thumbnail/inkdrop.png"
-import LyricfyThumbnail from "../public/thumbnail/lyricfythumb.png"
-import FaceThumbnail from "../public/thumbnail/facethumb.png"
-import ScottsThumbnail from "../public/thumbnail/uzithumb.png"
+import LyricfyThumbnail from "../public/thumbnail/lyricfythumb.PNG"
+import FaceThumbnail from "../public/thumbnail/facethumb.PNG"
+import ScottsThumbnail from "../public/thumbnail/uzithumb.PNG"
 
 function Work() {
     return (

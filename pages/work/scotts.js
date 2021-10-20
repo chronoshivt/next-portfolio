@@ -11,6 +11,24 @@ function scotts() {
                 Scotts NFT is a set of 1600 programtically generated
                 NFT's minted on the Solana Blockchain. 
               </p>
+              <ul className="mx-4 text-justify my-6">
+                <li>
+                    <span className="mr-2 bg-red-300 px-0.5 bg-opacity-50">
+                        Website
+                    </span>
+                    <a className="text-red-300" href="https://lyricfy1.herokuapp.com/">
+                    https://lyricfy1.herokuapp.com/
+                    </a>
+                </li>
+                <li>
+                    <span className="mr-2 bg-red-300 px-0.5 bg-opacity-50">
+                        Stack
+                    </span>
+                    <a className="text-red-300">
+                    React, TailwindCSS
+                    </a>
+                </li>
+              </ul>
             </div>
         <div>
            

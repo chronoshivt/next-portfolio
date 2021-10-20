@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 const CardItem = ({ children, id, title, thumbnail }) => {
     return (
-        <div className="w-full center mb-6">
+        <div className="w-full center mb-10">
             <Link href={`/work/${id}`}>
-                <div className="">
+                <div className="hover:cursor-pointer">
                     <Image 
                         src={thumbnail}
                         alt={title}

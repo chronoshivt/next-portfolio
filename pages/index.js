@@ -31,7 +31,7 @@ export default function Home() {
               <div className="text-left">
                 <h2 className="text-3xl">Ryan Diaz</h2>
                 <p>
-                  Digital Craftsmen ( Artist / Developer / Designer )
+                  Artist / Developer / Student
                 </p>
               </div>
               <div className="relative mt-8 h-auto w-auto">
@@ -39,9 +39,12 @@ export default function Home() {
               </div>
             </div>
             <div className="">
-              <h3 className="text-2xl text-left underline my-2">Work</h3>
+              <h3 className="text-2xl text-left underline my-2">Bio</h3>
               <p className="text-justify">
-                Ryan Diaz is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop. 
+                Ryan Diaz is a full-stack developer based in the US. with a passion for building
+                digital services/stuff he wants. He has a knack for all things launching products, from planning
+                and designing all the way to solving real-life problems with code. When not online, he loves hanging
+                out with his camera. Currently, he is living off of his own product called Inkdrop. 
               </p>
               <div className="my-6 align-center">
                 <Link href="/work">
@@ -50,7 +53,7 @@ export default function Home() {
               </div>
             </div>
             <div className="">
-              <h3 className="text-2xl text-left underline my-2">Bio</h3>
+              <h3 className="text-2xl text-left underline my-2">Work</h3>
               <p className="text-justify">
                 Ryan Diaz is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop. 
               </p>

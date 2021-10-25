@@ -3,7 +3,7 @@ import Section from '../../components/Section'
 
 function scotts() {
     return (
-        <div>
+        <div className="w-full">
 
         <Section title="Scotts NFT">
         <div className="">
@@ -17,7 +17,7 @@ function scotts() {
                         Website
                     </span>
                     <a className="text-gray-light underline" href="https://lyricfy1.herokuapp.com/">
-                    https://lyricfy1.herokuapp.com/
+                    WIP
                     </a>
                 </li>
                 <li>
@@ -30,7 +30,7 @@ function scotts() {
                 </li>
               </ul>
             </div>
-        <div>
+        <div className="mb-8">
            
         </div>
           </Section>

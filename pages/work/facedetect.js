@@ -5,7 +5,7 @@ import facedetecgif from '../../public/facedetecgif.gif'
 
 function facedetect() {
     return (
-        <div>
+        <div className="w-full">
         <Section title="Face Detect">
         <div className="">
               <p className="text-justify">
@@ -42,7 +42,7 @@ function facedetect() {
                 </li>
               </ul>
             </div>
-        <div className="by-8">
+        <div className="mb-8">
            <Image src={facedetecgif} />
         </div>
           </Section>

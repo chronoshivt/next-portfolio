@@ -2,18 +2,19 @@ import React from 'react'
 import Section from '../../components/Section'
 import Image from 'next/image'
 import lyricfygif from '../../public/lyricfygif.gif'
+import CardItem from '../../components/CardItem'
 
 function lyricfy() {
     return (
-        <div>
+        <div className="w-full">
 
         <Section title="Lyricfy">
-        <div className="">
+      
               <p className="text-justify">
                 Lyricfy opens a new tab with the Genius lyrics
                 page of the currently playing song on Spotify.
               </p>
-              <ul className="mx-4 text-justify my-6">
+              <ul className=" text-justify my-6">
                 <li>
                     <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
                         Website:
@@ -39,9 +40,9 @@ function lyricfy() {
                     </a>
                 </li>
               </ul>
-            </div>
-        <div className="by-8">
-           <Image src={lyricfygif} />
+          
+        <div className=" mb-8">
+        <Image src={lyricfygif} />
         </div>
           </Section>
 

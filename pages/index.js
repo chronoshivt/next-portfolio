@@ -41,10 +41,9 @@ export default function Home() {
             <div className="">
               <h3 className="text-2xl text-left underline my-2">Bio</h3>
               <p className="text-justify">
-                Ryan Diaz is a full-stack developer and student working in the United States. with a passion for building
-                digital services/stuff he wants. He has a knack for all things launching products, from planning
-                and designing all the way to solving real-life problems with code. When not online, he loves hanging
-                out with his camera. Currently, he is living off of his own product called Inkdrop. 
+                Ryan Diaz is a full-stack developer and student working in the United States. Currently he is working towards
+                a Bachelors Degree in Computer Science with a focus in machine learning. During his free time he enjoys studying 
+                blockchain technology and Web3.
               </p>
               <div className="my-6 align-center">
                 <Link href="/work">
@@ -53,9 +52,14 @@ export default function Home() {
               </div>
             </div>
             <div className="">
-              <h3 className="text-2xl text-left underline my-2">Work</h3>
+              <h3 className="text-2xl text-left underline my-2">Stack</h3>
               <p className="text-justify">
-                Ryan Diaz is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop. 
+                Front-end: React, NextJS, TailwindCSS, Javascript, HTML, CSS
+                <br />
+                Back-end: NodeJS, Express, PostgreSQL
+                <br />
+                Etc: Web3, Truffle, Solidity
+
               </p>
             </div>
           </div>

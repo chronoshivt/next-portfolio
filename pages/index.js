@@ -10,7 +10,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-800">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-bg">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,7 +23,7 @@ export default function Home() {
 
         <article>
           <div className="px-4 text-white pb-4">
-            <div className="box-content rounded-lg bg-gray-700 text-white border-green-300 h-auto w-auto p-4 mx-6 mb-6 border-4">
+            <div className="box-content rounded-lg bg-gray text-white border-green h-auto w-auto p-4 mx-6 mb-6 border-4">
               Hello, I'm a full-stack developer based in San Antonio.
             </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
               </p>
               <div className="my-6 align-center">
                 <Link href="/work">
-                  <button className="rounded-full text-black bg-green-200 px-6 py-2 hover:bg-green-400">My work</button>
+                  <button className="rounded-full text-black bg-purple px-6 py-2 hover:bg-gray">My work</button>
                 </Link>
               </div>
             </div>

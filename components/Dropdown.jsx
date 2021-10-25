@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 class Dropdown extends React.Component {
     render() {
-        return <div className="bg-red-300 w-max rounded-lg p-2">
+        return <div className="bg-green w-max rounded-lg p-2">
             <ul className="w-20 text-left mr-8">
                 <Link href='/'>
                     <a className="block hover:underline" >About</a>

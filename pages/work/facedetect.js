@@ -18,19 +18,27 @@ function facedetect() {
               </p>
               <ul className="mx-4 text-justify my-6">
                 <li>
-                    <span className="mr-2 bg-red-300 px-0.5 bg-opacity-50">
-                        Website
+                    <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
+                        Website:
                     </span>
-                    <a className="text-red-300" href="https://face-detec1.herokuapp.com/">
+                    <a className="text-gray-light underline" href="https://face-detec1.herokuapp.com/">
                     https://face-detec1.herokuapp.com/
                     </a>
                 </li>
                 <li>
-                    <span className="mr-2 bg-red-300 px-0.5 bg-opacity-50">
-                        Stack
+                    <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
+                        Stack:
                     </span>
-                    <a className="text-red-300">
+                    <a className="">
                     React, Clarifai API, Express, PostgreSQL, NodeJS
+                    </a>
+                </li>
+                <li>
+                    <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
+                        Github:
+                    </span>
+                    <a className="text-green underline" href="https://github.com/chronoshivt/facedetect" className="text-red-300">
+                    https://github.com/chronoshivt/facedetect
                     </a>
                 </li>
               </ul>

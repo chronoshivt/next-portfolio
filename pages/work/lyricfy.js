@@ -34,7 +34,7 @@ function lyricfy() {
                     <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
                         Github:
                     </span>
-                    <a className="underline text-gray-light" href="https://github.com/chronoshivt/lyricfy" className="text-red-300">
+                    <a className="underline text-gray-light" href="https://github.com/chronoshivt/lyricfy">
                     https://github.com/chronoshivt/lyricfy
                     </a>
                 </li>

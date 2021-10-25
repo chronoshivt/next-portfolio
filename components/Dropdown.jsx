@@ -14,7 +14,7 @@ class Dropdown extends React.Component {
                 <Link href='/resume'>
                     <a className="block hover:underline" >Resume</a>
                 </Link>
-                <Link href='https://github.com/chronoshivt'>
+                <Link href='https://github.com/chronoshivt/next-portfolio'>
                     <a className="block hover:underline" >Github</a>
                 </Link>
             </ul>

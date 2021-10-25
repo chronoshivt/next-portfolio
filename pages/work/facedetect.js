@@ -43,7 +43,7 @@ function facedetect() {
                 </li>
               </ul>
             </div>
-        <div className="pb-8">
+        <div className="by-8">
            <Image src={facedetecgif} />
         </div>
           </Section>

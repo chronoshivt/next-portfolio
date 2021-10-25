@@ -24,7 +24,7 @@ export default function Home() {
         <article>
           <div className="px-4 text-white pb-4">
             <div className="box-content rounded-lg bg-gray text-white border-green h-auto w-auto p-4 mx-6 mb-6 border-4">
-              Hello, I'm a full-stack developer based in San Antonio.
+              Hello, I'm a full-stack developer based in the US.
             </div>
 
             <div className="text-white">
@@ -41,7 +41,7 @@ export default function Home() {
             <div className="">
               <h3 className="text-2xl text-left underline my-2">Bio</h3>
               <p className="text-justify">
-                Ryan Diaz is a full-stack developer based in the US. with a passion for building
+                Ryan Diaz is a full-stack developer and student working in the United States. with a passion for building
                 digital services/stuff he wants. He has a knack for all things launching products, from planning
                 and designing all the way to solving real-life problems with code. When not online, he loves hanging
                 out with his camera. Currently, he is living off of his own product called Inkdrop. 

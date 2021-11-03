@@ -7,7 +7,7 @@ import ScottsThumbnail from "../public/thumbnail/uzithumb.PNG"
 function Work() {
     return (
       <div>
-          <Section title="Work">
+          {/* <Section title="Work">
           <CardItem
           title="Scotts NFT"
           thumbnail={ScottsThumbnail}
@@ -16,7 +16,7 @@ function Work() {
             Lead full stack developer for NFT project on
             Solana Blockchain.
           </CardItem>
-          </Section>
+          </Section> */}
 
           <Section title="Projects"> 
             <CardItem

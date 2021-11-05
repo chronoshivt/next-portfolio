@@ -3,7 +3,7 @@ import CardItem from "../components/CardItem"
 import LyricfyThumbnail from "../public/thumbnail/lyricfythumb.PNG"
 import FaceThumbnail from "../public/thumbnail/facethumb.PNG"
 import ScottsThumbnail from "../public/thumbnail/uzithumb.PNG"
-
+import BooksThumbnail from "../public/thumbnail/booksthumb.PNG"
 function Work() {
     return (
       <div>
@@ -18,7 +18,15 @@ function Work() {
           </CardItem>
           </Section> */}
 
-          <Section title="Projects"> 
+          <Section title="Projects">
+          <CardItem
+            title="Google books"
+            thumbnail={BooksThumbnail}
+            id="googlebooks"
+            >
+              Uses Google Books API to search for book titles.
+          </CardItem>
+
             <CardItem
             title="Lyricfy"
             thumbnail={LyricfyThumbnail}

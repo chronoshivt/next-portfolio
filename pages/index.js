@@ -36,7 +36,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative mt-8 h-auto w-auto">
-                  <Image className="rounded-full" src={avi} height={64} width={64} />
+                  <Image className="rounded-full" src={avi} height={72} width={72} />
               </div>
             </div>
             <div className="">

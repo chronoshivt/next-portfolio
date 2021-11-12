@@ -1,11 +1,11 @@
 import Section from "../components/Section"
-
+import Article from "../components/Article"
 import ResumeEmbed from "../components/ResumeEmbed"
 
 function Resume() {
 
     return (
-      <div>
+      <Article>
 
         <Section title="Resume">
         <div className="invisible">
@@ -18,7 +18,7 @@ function Resume() {
         </div>
           </Section>
 
-      </div>
+      </Article>
     )
   }
   

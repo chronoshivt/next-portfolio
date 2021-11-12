@@ -5,12 +5,13 @@ import Link from 'next/link';
 
 import Image from 'next/image'
 import avi from '../public/avi.jpg'
+import Article from '../components/Article';
 
 export default function Home() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-bg">
+    <Article className="flex flex-col items-center justify-center min-h-screen py-2 bg-bg">
       <Head>
         <title>Portfolio | RFD</title>
         <link rel="icon" href="/favicon.ico" />
@@ -67,6 +68,6 @@ export default function Home() {
         </div>
                
       </main>
-    </div>
+    </Article>
   )
 }

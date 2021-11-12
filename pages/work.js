@@ -2,11 +2,13 @@ import Section from "../components/Section"
 import CardItem from "../components/CardItem"
 import LyricfyThumbnail from "../public/thumbnail/lyricfythumb.PNG"
 import FaceThumbnail from "../public/thumbnail/facethumb.PNG"
-import ScottsThumbnail from "../public/thumbnail/uzithumb.PNG"
+import Article from "../components/Article"
 import BooksThumbnail from "../public/thumbnail/booksthumb.PNG"
+import { motion } from "framer-motion";
+
 function Work() {
     return (
-      <div>
+      <Article>
           {/* <Section title="Work">
           <CardItem
           title="Scotts NFT"
@@ -46,7 +48,7 @@ function Work() {
           </CardItem>
 
           </Section>
-      </div>
+      </Article>
     )
   }
   

@@ -5,7 +5,7 @@ import japan from '../public/japan.png'
 function Japan() {
     return (
         <div className="w-auto m-auto">
-          <Image src={japan} height={280} width={280}/>
+          <Image className="rounded-xl" src={japan} height={280} width={280}/>
         </div>
     )
 }

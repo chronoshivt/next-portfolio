@@ -55,11 +55,22 @@ export default function Home() {
             <div className="">
               <h3 className="text-2xl text-left underline my-2">Stack</h3>
               <p className="text-justify">
-                Front-end: React, NextJS, TailwindCSS, Javascript, HTML, CSS
+                Front-end: React, NextJS, TailwindCSS, Javascript, Framer Motion, Three.js
                 <br />
                 Back-end: NodeJS, Express, PostgreSQL
                 <br />
                 Etc: Web3, Truffle, Solidity
+
+              </p>
+            </div>
+            <div className="">
+              <h3 className="text-2xl text-left underline my-2">Contact</h3>
+              <p className="text-justify flex justify-between">
+                Email: rfdraid@gmail.com
+                <br />
+                <a className="text-green" href="https://www.linkedin.com/in/ryan-diaz-737526219/">LinkedIn</a> 
+                <br />
+                
 
               </p>
             </div>

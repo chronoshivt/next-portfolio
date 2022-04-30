@@ -5,7 +5,7 @@ import FaceThumbnail from "../public/thumbnail/facethumb.PNG"
 import Article from "../components/Article"
 import BooksThumbnail from "../public/thumbnail/booksthumb.PNG"
 import { motion } from "framer-motion";
-
+import ChatifyThumbnail from "../public/thumbnail/chatifythumb.png"
 function Work() {
     return (
       <Article>
@@ -21,6 +21,14 @@ function Work() {
           </Section> */}
 
           <Section title="Projects">
+
+          <CardItem
+            title="Chatify"
+            thumbnail={ChatifyThumbnail}
+            id="chatify"
+            >
+              Full featured social music discovery app.
+          </CardItem>
           <CardItem
             title="Google books"
             thumbnail={BooksThumbnail}

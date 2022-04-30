@@ -8,11 +8,12 @@ function chatify() {
     return (
         <div className="w-full">
 
-        <Section title="Lyricfy">
+        <Section title="Chatify">
       
               <p className="text-justify">
-                Lyricfy opens a new tab with the Genius lyrics
-                page of the currently playing song on Spotify.
+              Full featured social music discovery app. Chatify uses your currently 
+              playing song on Spotify to place you in an anonymous web IRC chat with other users listening to the same artist. 
+              UI allows for seamless switching between rooms/music. In active development.
               </p>
               <ul className=" text-justify my-6">
                 <li>

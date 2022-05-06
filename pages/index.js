@@ -32,7 +32,7 @@ export default function Home() {
               <div className="text-left">
                 <h2 className="text-3xl">Ryan Diaz</h2>
                 <p>
-                  Artist / Developer / Student
+                  Artist / Developer /
                 </p>
               </div>
               <div className="relative mt-8 h-auto w-auto">
@@ -42,9 +42,8 @@ export default function Home() {
             <div className="">
               <h3 className="text-2xl text-left underline my-2">Bio</h3>
               <p className="text-justify">
-                Ryan Diaz is a full-stack developer and student working in the United States. Currently he is working towards
-                a Bachelors Degree in Computer Science with a focus in machine learning. During his free time he enjoys studying 
-                blockchain technology and Web3.
+                Ryan Diaz is a software engineer and freelancer working in the United States. Currently he is studying 
+                machine learning and decentralized web protocols. During his free time he enjoys making electronic music.
               </p>
               <div className="my-6 align-center">
                 <Link href="/work">

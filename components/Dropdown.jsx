@@ -6,16 +6,16 @@ class Dropdown extends React.Component {
         return <div className="bg-green text-bg w-max rounded-lg p-2">
             <ul className="w-20 text-left mr-8">
                 <Link href='/'>
-                    <a className="block hover:underline" >About</a>
+                    <p className="block hover:underline" >About</p>
                 </Link>
                 <Link href='/work'>    
-                    <a className="block hover:underline" >Work</a>
+                    <p className="block hover:underline" >Work</p>
                 </Link>
                 <Link href='/resume'>
-                    <a className="block hover:underline" >Resume</a>
+                    <p className="block hover:underline" >Resume</p>
                 </Link>
                 <Link href='https://github.com/chronoshivt/next-portfolio'>
-                    <a className="block hover:underline" >Github</a>
+                    <p className="block hover:underline" >Github</p>
                 </Link>
             </ul>
         </div>

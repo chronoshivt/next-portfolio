@@ -42,7 +42,7 @@ export default function Home() {
             <div className="">
               <h3 className="text-2xl text-left underline my-2">Bio</h3>
               <p className="text-justify">
-                Ryan Diaz is a software engineer and freelancer working in the United States. Currently he is studying 
+                Ryan Diaz is a software developer and freelancer working in the United States. Currently he is studying 
                 artificial intelligence and web protocols. During his free time he enjoys making electronic music.
               </p>
               <div className="my-6 align-center">

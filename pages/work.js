@@ -5,7 +5,7 @@ import FaceThumbnail from "../public/thumbnail/facethumb.PNG"
 import Article from "../components/Article"
 import BooksThumbnail from "../public/thumbnail/booksthumb.PNG"
 import { motion } from "framer-motion";
-import ChatifyThumbnail from "../public/thumbnail/chatifythumb.PNG"
+import ChatifyThumbnail from "../public/thumbnail/chatifythumb.GIF"
 function Work() {
     return (
       <Article>

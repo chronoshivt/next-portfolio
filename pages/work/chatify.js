@@ -32,14 +32,14 @@ function chatify() {
                     Next.js, Express, NodeJS, SocketIO, Spotify API
                     </a>
                 </li>
-                {/* <li>
+                <li>
                     <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
                         Github:
                     </span>
-                    <a className="underline text-gray-light" href="https://github.com/chronoshivt/lyricfy">
-                    https://github.com/chronoshivt/lyricfy
+                    <a className="underline text-gray-light" href="https://github.com/chronoshivt/chatifymono">
+                    https://github.com/chronoshivt/chatifymono
                     </a>
-                </li> */}
+                </li>
               </ul>
           
         <div className=" mb-8">

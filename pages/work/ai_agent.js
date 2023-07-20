@@ -49,7 +49,7 @@ function ai_agent() {
         <div className=" mb-8">
           <Image src={aiGif} />
           <p className="text-sm">
-            Agent scrolling it's timeline, retreiving relevant memories, and
+            Agent scrolling it's timeline, retrieving relevant memories, and
             making a decision on an action that is then confirmed by the user.
           </p>
         </div>

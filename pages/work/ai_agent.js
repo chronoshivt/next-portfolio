@@ -27,6 +27,15 @@ function ai_agent() {
               twitter.com
             </a>
           </li>
+          <li>
+            <span className="mr-2 bg-purple px-0.5 bg-opacity-50">Date:</span>
+            <p
+              className="text-red-30"
+             
+            >
+              January 2023
+            </p>
+          </li>
           <li className="flex">
             <span className="mr-2 bg-purple h-full px-0.5 bg-opacity-50">
               Stack:

@@ -27,6 +27,15 @@ function chatify() {
             </a>
           </li>
           <li>
+            <span className="mr-2 bg-purple px-0.5 bg-opacity-50">Date:</span>
+            <p
+              className="text-red-30"
+             
+            >
+              April 2022
+            </p>
+          </li>
+          <li>
             <span className="mr-2 bg-purple px-0.5 bg-opacity-50">Stack:</span>
             <a className="text-red-300">
               Next.js, Express, NodeJS, SocketIO, Spotify API

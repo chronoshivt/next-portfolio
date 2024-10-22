@@ -15,6 +15,7 @@ export default function Home() {
       <Head>
         <title>Portfolio | RFD</title>
         <link rel="icon" href="/favicon.ico" />
+        <script defer src="https://umami.toshisoft.com/script.js" data-website-id="af6ae3ba-7bda-442e-99ae-c8e5087995b6"></script>
       </Head>
 
       <main >

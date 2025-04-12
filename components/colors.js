@@ -80,9 +80,6 @@ export function generateComplimentaryColors(hex) {
     return palette;
 }
 
-
-
-
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -94,7 +91,38 @@ function shuffleArray(array) {
 export function generateRandomColorByDate() {
     const seed = Date.now();
     const random = (seed, max, factor = 1) => Math.floor((Math.sin(seed) * 10000 - Math.floor(Math.sin(seed) * 10000)) * max * factor);
-    return `#${random(seed, 70).toString(16).padStart(2, '0')}${random(seed + 1, 256).toString(16).padStart(2, '0')}${random(seed + 2, 70).toString(16).padStart(2, '0')}`;
+    
+    // Generate neon colors by ensuring at least one channel is very bright (close to 255)
+    // and at least one channel is very low (close to 0)
+    const r = random(seed, 256);
+    const g = random(seed + 1, 256);
+    const b = random(seed + 2, 256);
+    
+    // Find the maximum and minimum values
+    const max = Math.max(r, g, b);
+    const min = Math.min(r, g, b);
+    
+    // If the contrast is not high enough, boost it
+    if (max - min < 150) {
+        // Boost the brightest channel to near maximum
+        if (max === r) return `#ff${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+        if (max === g) return `#${r.toString(16).padStart(2, '0')}ff${b.toString(16).padStart(2, '0')}`;
+        if (max === b) return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}ff`;
+    }
+    
+    return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+}
+
+// Add a new function to generate a palette of neon colors
+export function generateNeonPalette(count = 5) {
+    const palette = [];
+    const baseSeed = Date.now();
+    
+    for (let i = 0; i < count; i++) {
+        palette.push(generateRandomColorByDate(baseSeed + i));
+    }
+    
+    return palette;
 }
 
 // Example usage:

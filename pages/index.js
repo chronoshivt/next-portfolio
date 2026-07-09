@@ -71,7 +71,7 @@ export default function Home() {
                   <br />
                   <a
                     className="text-green"
-                    href="https://www.linkedin.com/in/ryan-diaz-737526219/"
+                    href="https://www.linkedin.com/in/ryan-d-737526219/"
                   >
                     LinkedIn
                   </a>

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-gray-light">2023 Ryan Diaz. All Rights Reserved.</div>
+    <div className="text-gray-light">2026 Ryan Diaz. All Rights Reserved.</div>
   );
 };
 

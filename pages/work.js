@@ -10,17 +10,6 @@ import ChatifyThumbnail from "../public/thumbnail/chatifythumb.gif";
 function Work() {
   return (
     <Article>
-      {/* <Section title="Work">
-          <CardItem
-          title="Scotts NFT"
-          thumbnail={ScottsThumbnail}
-          id="scotts"
-          >
-            Lead full stack developer for NFT project on
-            Solana Blockchain.
-          </CardItem>
-          </Section> */}
-
       <Section title="Projects">
         <CardItem title="AI Twitter Agent" thumbnail={aiGif} id="ai_agent">
           Semi-autonomous, LLM-powered agent capable of running a Twitter

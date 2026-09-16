@@ -22,13 +22,18 @@ const Nav = () => {
 
             <div className="w-full self-center flex justify-end">
               <div>
-                <button className="rounded-md bg-green text-bg hover:bg-purple p-2">
-                    <a href="https://github.com/chronoshivt">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <a
+                  href="https://github.com/chronoshivt"
+                  aria-label="Visit Ryan Diaz's GitHub profile"
+                  className="block rounded-md bg-green p-2 text-bg hover:bg-purple"
+                >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <g display="none">
                       <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                      </g>
+                      <path d="M12 .297a12 12 0 00-3.794 23.4c.6.111.82-.261.82-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.419-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.304-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.49 11.49 0 0112 3.004c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.872.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.479 5.921.43.371.814 1.103.814 2.222v3.293c0 .319.216.694.825.576A12.003 12.003 0 0012 .297z" />
                       </svg>
-                    </a>
-                </button>
+                </a>
               </div>
               <div className="ml-4">
                 <Tippy content={<Dropdown />} placement="bottom-end" trigger="click" interactive="true" animation="scale" inertia="true">

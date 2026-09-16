@@ -9,7 +9,7 @@ function Resume() {
 
         <Section title="Resume">
         <div className="invisible">
-              <p className="text-justify">
+              <p className="text-left">
                 Ryan Diaz is a freelance and a full-stack developer based in Osaka witoodo 
               </p>
             </div>
@@ -21,6 +21,5 @@ function Resume() {
       </Article>
     )
   }
-  
+
   export default Resume
-  

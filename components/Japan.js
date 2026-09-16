@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { generateComplimentaryColors, generateRandomColorByDate } from './colors.js';
 
+const ART_COLUMNS = 60;
+const ART_ROWS = 24;
+
 function Art({ blobChars, blobColors }) {
-  const [blobPosition, setBlobPosition] = useState({ x: 25, y: 15 });
-  const [trailMap, setTrailMap] = useState(() => Array.from({ length: 30 }, () => new Array(100).fill(0)));
+  const [blobPosition, setBlobPosition] = useState({ x: 15, y: 12 });
+  const [trailMap, setTrailMap] = useState(() => Array.from({ length: ART_ROWS }, () => new Array(ART_COLUMNS).fill(0)));
   const animationRef = useRef(null);
   const lastTimeRef = useRef(0);
   const frameCountRef = useRef(0);
@@ -37,14 +40,14 @@ function Art({ blobChars, blobColors }) {
           let newY = prevPosition.y + velocityRef.current.y;
           
           // Bounce off borders
-          if (newX <= 0 || newX >= 99) {
+          if (newX <= 0 || newX >= ART_COLUMNS - 1) {
             velocityRef.current.x = -velocityRef.current.x;
-            newX = Math.max(0, Math.min(99, newX));
+            newX = Math.max(0, Math.min(ART_COLUMNS - 1, newX));
           }
           
-          if (newY <= 0 || newY >= 29) {
+          if (newY <= 0 || newY >= ART_ROWS - 1) {
             velocityRef.current.y = -velocityRef.current.y;
-            newY = Math.max(0, Math.min(29, newY));
+            newY = Math.max(0, Math.min(ART_ROWS - 1, newY));
           }
 
           // Update blob position and trail fade in one go
@@ -74,23 +77,29 @@ function Art({ blobChars, blobColors }) {
   }, []);
 
   const artStyle = {
-    fontFamily: 'monospace',
-    whiteSpace: 'pre-wrap',
-    lineHeight: '8px',
-    fontSize: '16px',
-    letterSpacing: '2px',
+    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
+    whiteSpace: 'pre',
+    lineHeight: 1.1,
+    fontSize: 'clamp(7px, 1vw, 10px)',
+    letterSpacing: 0,
+    fontVariantLigatures: 'none',
     height: '300px',
     width: '100%',
     overflow: 'hidden',
     position: 'relative',
-    backgroundColor: 'rgba(0, 0, 0, 0.05)',
-    borderRadius: '8px',
     padding: '10px',
     boxSizing: 'border-box',
   };
   
   // Convert the trailMap to ASCII art
   const generateAsciiArt = (trailMap) => {
+    const escapeHtml = (character) => character
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
     return trailMap.map((row) =>
       row.map((cell, x) => {
         if (cell > 0) {
@@ -103,7 +112,7 @@ function Art({ blobChars, blobColors }) {
           const charIndex = Math.floor((cell * (blobChars.length - 1)) + (x * 0.1) % blobChars.length) % blobChars.length;
           const char = blobChars[charIndex];
           
-          return `<span style="color:${color}${opacity};">${char}</span>`;
+          return `<span style="color:${color}${opacity};">${escapeHtml(char)}</span>`;
         }
         return ' ';
       }).join('') + '\n'

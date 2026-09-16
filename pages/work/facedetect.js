@@ -8,14 +8,14 @@ function facedetect() {
     <div className="w-full">
       <Section title="Face Detect">
         <div className="">
-          <p className="text-justify">
+          <p className="text-left">
             Face Detect uses the Clarifai API to detect all the faces in a
             picture.
             <br />
             Login password encrypted with Bcrypt and stored in SQL database
             using Postgres.
           </p>
-          <ul className="mx-4 text-justify my-6">
+          <ul className="mx-4 text-left my-6">
             <li>
               <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
                 Website:

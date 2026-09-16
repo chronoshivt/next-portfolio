@@ -8,14 +8,14 @@ function ai_agent() {
   return (
     <div className="w-full">
       <Section title="AI Twitter Agent">
-        <p className="text-justify">
+        <p className="text-left">
           LLM powered Twitter agent. Agent is able plan and make tweets, quote
           tweet, reply, like, retweet, follow/unfollow, and change it's own bio
           semi-autonomously (or fully). Design centered around emulating real
           user interactions through relevance based Vector DB memory retrieval
           and a 'personality' prompt.
         </p>
-        <ul className=" text-justify my-6">
+        <ul className="text-left my-6">
           <li>
             <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
               Website:

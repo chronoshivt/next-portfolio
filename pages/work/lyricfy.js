@@ -8,11 +8,11 @@ function lyricfy() {
   return (
     <div className="w-full">
       <Section title="Lyricfy">
-        <p className="text-justify">
+        <p className="text-left">
           Lyricfy opens a new tab with the Genius lyrics page of the currently
           playing song on Spotify.
         </p>
-        <ul className=" text-justify my-6">
+        <ul className="text-left my-6">
           <li>
             <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
               Website:

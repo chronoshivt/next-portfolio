@@ -8,11 +8,11 @@ function googlebooks() {
   return (
     <div className="w-full">
       <Section title="Google Books">
-        <p className="text-justify">
+        <p className="text-left">
           Searches Google for matching book titles. Uses Axios to make GET
           request.
         </p>
-        <ul className=" text-justify my-6">
+        <ul className="text-left my-6">
           <li>
             <span className="mr-2 bg-purple px-0.5 bg-opacity-50">
               Website:

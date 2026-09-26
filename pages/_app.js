@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 function MyApp({ Component, pageProps, router }) {
   return (
     <Layout className="bg-bg">
-      <AnimatePresence exitBeforeEnter initial={true}>
+      <AnimatePresence exitBeforeEnter initial={true} onExitComplete={() => window.scrollTo(0, 0)}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
       <Analytics />

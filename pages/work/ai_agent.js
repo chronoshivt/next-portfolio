@@ -1,12 +1,15 @@
 import React from "react";
 import Section from "../../components/Section";
+import BackButton from "../../components/BackButton";
+import Article from "../../components/Article";
 import Image from "next/image";
 import chatifyGif from "../../public/spotichat.gif";
 import CardItem from "../../components/CardItem";
 import aiGif from "../../public/ai_bot.gif";
 function ai_agent() {
   return (
-    <div className="w-full">
+    <Article>
+      <BackButton />
       <Section title="AI Twitter Agent">
         <p className="text-left">
           LLM powered Twitter agent. Agent is able plan and make tweets, quote
@@ -48,9 +51,9 @@ function ai_agent() {
             <span className="mr-2 bg-purple px-0.5 bg-opacity-50">Github:</span>
             <a
               className="underline text-gray-light"
-              href="https://github.com/chronoshivt/"
+              href="https://github.com/chronoshivt/twtter-automation"
             >
-              github.com/chronoshivt/
+              github.com/chronoshivt/twtter-automation
             </a>
           </li>
         </ul>
@@ -63,7 +66,7 @@ function ai_agent() {
           </p>
         </div>
       </Section>
-    </div>
+    </Article>
   );
 }
 

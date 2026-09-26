@@ -1,12 +1,15 @@
 import React from "react";
 import Section from "../../components/Section";
+import BackButton from "../../components/BackButton";
+import Article from "../../components/Article";
 import Image from "next/image";
 import chatifyGif from "../../public/spotichat.gif";
 import CardItem from "../../components/CardItem";
 
 function chatify() {
   return (
-    <div className="w-full">
+    <Article>
+      <BackButton />
       <Section title="Chatify">
         <p className="text-left">
           Full featured social music discovery app. Chatify uses your currently
@@ -56,7 +59,7 @@ function chatify() {
           <Image src={chatifyGif} />
         </div>
       </Section>
-    </div>
+    </Article>
   );
 }
 

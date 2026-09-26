@@ -1,30 +1,38 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 
+const ease = [0.22, 1, 0.36, 1]
+
 const variants = {
   hidden: {
-    y: 20,
+    y: 12,
     opacity: 0,
-    x: 0
+    filter: 'blur(6px)',
   },
   visible: {
     y: 0,
-    opacity:1,
-     },
+    opacity: 1,
+    filter: 'blur(0px)',
+    transition: { duration: 0.5, ease },
+  },
+  exit: {
+    y: -8,
+    opacity: 0,
+    filter: 'blur(4px)',
+    transition: { duration: 0.2, ease: 'easeIn' },
+  },
 }
 
 
 const Article = ({children}) => (
         <motion.div
-        initial="hidden" animate="visible" 
-        exit={{ opacity:0, y:20, x: -0}}
+        initial="hidden" animate="visible" exit="exit"
         variants={variants}
-        transition={{ type:"easeInOut" , duration: 0.3}}
-        style={{ position: 'relative'}}
+        style={{ position: 'relative', width: '100%' }}
         >
             {children}
         </motion.div>
-    
+
 )
 
 export default Article

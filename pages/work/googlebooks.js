@@ -1,12 +1,15 @@
 import React from "react";
 import Section from "../../components/Section";
+import BackButton from "../../components/BackButton";
+import Article from "../../components/Article";
 import Image from "next/image";
 import booksgif from "../../public/googlebooksgif.gif";
 import CardItem from "../../components/CardItem";
 
 function googlebooks() {
   return (
-    <div className="w-full">
+    <Article>
+      <BackButton />
       <Section title="Google Books">
         <p className="text-left">
           Searches Google for matching book titles. Uses Axios to make GET
@@ -47,7 +50,7 @@ function googlebooks() {
           <Image src={booksgif} />
         </div>
       </Section>
-    </div>
+    </Article>
   );
 }
 

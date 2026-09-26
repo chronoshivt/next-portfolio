@@ -1,12 +1,15 @@
 import React from "react";
 import Section from "../../components/Section";
+import BackButton from "../../components/BackButton";
+import Article from "../../components/Article";
 import Image from "next/image";
 import lyricfygif from "../../public/lyricfygif.gif";
 import CardItem from "../../components/CardItem";
 
 function lyricfy() {
   return (
-    <div className="w-full">
+    <Article>
+      <BackButton />
       <Section title="Lyricfy">
         <p className="text-left">
           Lyricfy opens a new tab with the Genius lyrics page of the currently
@@ -49,7 +52,7 @@ function lyricfy() {
           <Image src={lyricfygif} />
         </div>
       </Section>
-    </div>
+    </Article>
   );
 }
 

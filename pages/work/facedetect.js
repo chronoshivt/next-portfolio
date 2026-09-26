@@ -1,11 +1,14 @@
 import React from "react";
 import Section from "../../components/Section";
+import BackButton from "../../components/BackButton";
+import Article from "../../components/Article";
 import Image from "next/image";
 import facedetecgif from "../../public/facedetecgif.gif";
 
 function facedetect() {
   return (
-    <div className="w-full">
+    <Article>
+      <BackButton />
       <Section title="Face Detect">
         <div className="">
           <p className="text-left">
@@ -56,7 +59,7 @@ function facedetect() {
           <Image src={facedetecgif} />
         </div>
       </Section>
-    </div>
+    </Article>
   );
 }
 

@@ -11,6 +11,7 @@ const Layout = ({children}) => {
                 <Head>
                     <title>Portfolio | RFD</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <script defer src="https://stats.toshisoft.com/script.js" data-website-id="858b4c10-de6e-41ae-bd5b-4dd1bbfdf302"></script>
                 </Head>
                     <Nav />
 
